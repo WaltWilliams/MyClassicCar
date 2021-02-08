@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textView_padding">8dp</dimen>
+    <dimen name="detains_notes_padding">5dp</dimen>
+    <dimen name="editView_padding">8dp</dimen>
+    <dimen name="innerLayout_drop">60dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_marginEnd">16dp</dimen>
+    <dimen name="fab_marginBottom">96dp</dimen>
+</resources>

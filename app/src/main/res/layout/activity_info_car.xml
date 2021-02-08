@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/carInfoFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/fab_marginEnd"
+        android:layout_marginEnd="@dimen/fab_marginEnd"
+        app:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/ic_mode_edit_white_24dp" />
+
+
+    <include
+        android:id="@+id/carInfoToolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/innerLayout_drop"
+        android:fillViewport="true">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+
+            <android.support.constraint.Guideline
+                android:id="@+id/carGuideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.30" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/carGuideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.63" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/carGuideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5"/>
+
+
+            <ImageView
+                android:id="@+id/carInfoImageView"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/noimage" />
+
+            <TextView
+                android:id="@+id/carInfoOilLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/StandardFieldAlternate"
+                android:text="@string/model"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/carInfoImageView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/carInfoModelTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/model"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/carInfoImageView"
+                app:layout_constraintTop_toBottomOf="@+id/carInfoOilLabel" />
+
+            <TextView
+                android:id="@+id/carNameOilLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/StandardFieldAlternate"
+                android:text="@string/name"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/carInfoImageView"
+                app:layout_constraintTop_toBottomOf="@+id/carInfoModelTextView" />
+
+            <TextView
+                android:id="@+id/carInfoNameTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/name"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/carInfoImageView"
+                app:layout_constraintTop_toBottomOf="@+id/carNameOilLabel" />
+
+            <TextView
+                android:id="@+id/carVINLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/StandardFieldAlternate"
+                android:text="@string/vin"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/carInfoImageView" />
+
+            <TextView
+                android:id="@+id/carInfoVINtextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/vin"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/carVINLabel" />
+
+            <TextView
+                android:id="@+id/carEngConfigLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@color/StandardFieldAlternate"
+                android:text="@string/eng_config"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/carGuideline3"
+                app:layout_constraintTop_toBottomOf="@+id/carInfoVINtextView" />
+
+            <TextView
+                android:id="@+id/carEngUnitLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/StandardFieldAlternate"
+                android:text="@string/unit_field"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/carGuideline3"
+                app:layout_constraintStart_toStartOf="@+id/carGuideline2"
+                app:layout_constraintTop_toBottomOf="@+id/carInfoVINtextView" />
+
+            <TextView
+                android:id="@+id/carEngSizeLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@color/StandardFieldAlternate"
+                android:text="@string/eng_size"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/carEngUnitLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/carInfoVINtextView" />
+
+            <TextView
+                android:id="@+id/carInfoEngSizeTextView"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/eng_number"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/carInfoEngUnitsTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/carEngSizeLabel" />
+
+            <TextView
+                android:id="@+id/carInfoEngUnitsTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@string/unit_field"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/carInfoEngConfigTextView"
+                app:layout_constraintStart_toStartOf="@+id/carGuideline2"
+                app:layout_constraintTop_toBottomOf="@+id/carEngUnitLabel" />
+
+            <TextView
+                android:id="@+id/carInfoEngConfigTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@string/eng_config_short"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/carGuideline3"
+                app:layout_constraintTop_toBottomOf="@+id/carEngConfigLabel" />
+
+            <TextView
+                android:id="@+id/carEngNumLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/StandardFieldAlternate"
+                android:text="@string/eng_number"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/carInfoEngSizeTextView" />
+
+            <TextView
+                android:id="@+id/carInfoEngNumTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/eng_number"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/carEngNumLabel" />
+
+            <TextView
+                android:id="@+id/carNotesLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/StandardFieldAlternate"
+                android:text="@string/notes"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/carInfoIntervalTextView" />
+
+            <TextView
+                android:id="@+id/carInfoNotesTextView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/textView"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/carNotesLabel"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/carInfoIntervalLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@color/StandardFieldAlternate"
+                android:text="@string/oil_interval"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/carGuideline4"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/carInfoEngNumTextView" />
+
+            <TextView
+                android:id="@+id/carInfoIntervalTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/oil_interval"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/carGuideline4"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/carInfoIntervalLabel" />
+
+            <TextView
+                android:id="@+id/carInfoOdoTypeLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@color/StandardFieldAlternate"
+                android:text="@string/odo_type"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/carInfoIntervalLabel"
+                app:layout_constraintTop_toBottomOf="@+id/carInfoEngNumTextView" />
+
+            <TextView
+                android:id="@+id/carInfoOdoTypeTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@string/odo_type"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/carGuideline4"
+                app:layout_constraintTop_toBottomOf="@+id/carInfoOdoTypeLabel" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

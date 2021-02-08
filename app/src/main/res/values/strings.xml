@@ -1,0 +1,512 @@
+<resources>
+    <string name="app_name">My Classic Car</string>
+    <string-array name="engUnits">
+        <item>CID</item>
+        <item>Liter</item>
+        <item>CC</item>
+    </string-array>
+
+    <string-array name="odo">
+        <item>Miles</item>
+        <item>KM</item>
+    </string-array>
+
+    <string-array name="engConfiguration">
+        <item>1 Cyl</item>
+        <item>L2</item>
+        <item>L3</item>
+        <item>L4</item>
+        <item>L5</item>
+        <item>L6</item>
+        <item>L8</item>
+        <item>Flat 4</item>
+        <item>Flat 6</item>
+        <item>V2</item>
+        <item>V4</item>
+        <item>V5</item>
+        <item>V6</item>
+        <item>V8</item>
+        <item>V10</item>
+        <item>V12</item>
+        <item>V16</item>
+    </string-array>
+
+    <string-array name="years">
+        <item>Year</item>
+        <item>1999</item>
+        <item>1998</item>
+        <item>1997</item>
+        <item>1996</item>
+        <item>1995</item>
+        <item>1994</item>
+        <item>1993</item>
+        <item>1992</item>
+        <item>1991</item>
+        <item>1990</item>
+        <item>1989</item>
+        <item>1988</item>
+        <item>1987</item>
+        <item>1986</item>
+        <item>1985</item>
+        <item>1984</item>
+        <item>1983</item>
+        <item>1982</item>
+        <item>1981</item>
+        <item>1980</item>
+        <item>1979</item>
+        <item>1978</item>
+        <item>1977</item>
+        <item>1976</item>
+        <item>1975</item>
+        <item>1974</item>
+        <item>1973</item>
+        <item>1972</item>
+        <item>1971</item>
+        <item>1970</item>
+        <item>1969</item>
+        <item>1968</item>
+        <item>1967</item>
+        <item>1966</item>
+        <item>1965</item>
+        <item>1964</item>
+        <item>1963</item>
+        <item>1962</item>
+        <item>1961</item>
+        <item>1960</item>
+        <item>1959</item>
+        <item>1959</item>
+        <item>1958</item>
+        <item>1957</item>
+        <item>1956</item>
+        <item>1955</item>
+        <item>1954</item>
+        <item>1953</item>
+        <item>1952</item>
+        <item>1951</item>
+        <item>1949</item>
+        <item>1949</item>
+        <item>1948</item>
+        <item>1947</item>
+        <item>1946</item>
+        <item>1945</item>
+        <item>1944</item>
+        <item>1943</item>
+        <item>1942</item>
+        <item>1941</item>
+        <item>1940</item>
+        <item>1939</item>
+        <item>1938</item>
+        <item>1937</item>
+        <item>1936</item>
+        <item>1935</item>
+        <item>1934</item>
+        <item>1933</item>
+        <item>1932</item>
+        <item>1931</item>
+        <item>1930</item>
+        <item>1929</item>
+        <item>1928</item>
+        <item>1927</item>
+        <item>1926</item>
+        <item>1925</item>
+        <item>1924</item>
+        <item>1923</item>
+        <item>1922</item>
+        <item>1921</item>
+        <item>1920</item>
+        <item>1919</item>
+        <item>1918</item>
+        <item>1917</item>
+        <item>1916</item>
+        <item>1915</item>
+        <item>1914</item>
+        <item>1913</item>
+        <item>1912</item>
+        <item>1911</item>
+        <item>1910</item>
+        <item>1909</item>
+        <item>1908</item>
+        <item>1907</item>
+        <item>1906</item>
+        <item>1905</item>
+        <item>1904</item>
+        <item>1903</item>
+        <item>1902</item>
+        <item>1901</item>
+        <item>1900</item>
+        <item>1899</item>
+        <item>1898</item>
+        <item>1897</item>
+        <item>1896</item>
+        <item>1895</item>
+        <item>1894</item>
+        <item>1893</item>
+        <item>1892</item>
+        <item>1891</item>
+        <item>1890</item>
+        <item>1889</item>
+        <item>1888</item>
+        <item>1887</item>
+        <item>1886</item>
+        <item>1885</item>
+    </string-array>
+
+
+    <!-- Record select button text -->
+    <string name="engineOilChange">Engine Oil Change Record</string>
+    <string name="maintenanceRecord">Maintenance Record</string>
+    <string name="partNumbers">Part Numbers</string>
+
+    <!-- Pop-up strings -->
+    <string name="wait">Wait!</string>
+    <string name="didYouSave">An alteration has been made. Do you want to save the change? If you tap No your changes will be lost</string>
+    <string name="didYouSaveNew">Do you want to save the your new entry? If you tap No your new entry will be discarded</string>
+    <string name="useUpNav">Use the \"Up\" Arrow at the top left to navigate back.</string>
+
+    <!-- System text -->
+    <string name="car_info">Car Info.</string>
+    <string name="backup">Backup</string>
+    <string name="restore">Restore</string>
+    <string name="add_car_name">Add Car</string>
+    <string name="help_name">Help</string>
+    <string name="car_settings_name">Settings</string>
+    <string name="delete_this_car">Delete car</string>
+    <string name="delete_part">Delete OEM Part</string>
+    <string name="delete_source">Delete This Source</string>
+    <string name="edit_oem_part">Edit OEM Part</string>
+    <string name="edit_car">Edit Car</string>
+    <string name="existing_part">Choose From Existing Part</string>
+
+    <!-- View strings -->
+    <string name="home">Home</string>
+    <string name="make">Make</string>
+    <string name="model">Model</string>
+    <string name="name">Name</string>
+    <string name="source">Source</string>
+    <string name="vin">V.I.N.</string>
+    <string name="eng_number">Eng. Number</string>
+    <string name="eng_size">Eng. Size</string>
+    <string name="odo_read">Odometer Reading</string>
+    <string name="odom_read">Odometer</string>
+
+    <!-- Oil Change related -->
+    <string name="odo_type">Odometer Type</string>
+    <string name="oil_interval">Oil Change Interval</string>
+    <string name="oil_was_due">Oil Change Was Due</string>
+    <string name="next_oil">Next Oil Change Due</string>
+    <string name="oil_viscosity">Oil Viscosity</string>
+    <string name="oil_brand">Oil Brand</string>
+    <string name="oil">Oil</string>
+    <string name="filter">Filter</string>
+    <string name="no_data">No data.</string>
+
+    <!-- Maintenance related -->
+    <string name="work_performed">Work Performed</string>
+    <string name="specifics">Specifics</string>
+    <string name="miles">Miles</string>
+    <string name="click_on_wp">Tap on the maintenance instance to see details of the repair.</string>
+
+    <string name="eng_config">Eng. Configuration</string>
+    <string name="eng_config_short">Eng. Config.</string>
+    <string name="app_image">app Image</string>
+
+    <string name="save_button">Save</string>
+    <string name="view_parts_button">View Parts</string>
+    <string name="year_field">Year</string>
+    <string name="unit_field">Units</string>
+    <string name="notes">Notes:</string>
+    <string name="add_part">Add Part</string>
+    <string name="part_name">Part Name</string>
+    <string name="part_number">Part Number</string>
+    <string name="oem_part_number">OEM Part Number</string>
+    <string name="mfg">Manufacture</string>
+    <string name="barcode">UPC</string>
+    <string name="other_sources">Other Sources of This Part</string>
+    <string name="move_part">Move Part</string>
+    <string name="details">Details:</string>
+    <string name="edit_part">Edit Part</string>
+    <string name="email">E-mail</string>
+    <string name="date">Date</string>
+
+    <!-- Editing string -->
+    <string name="enable_edit">Enable Editing</string>
+    <string name="to_edit">To edit selection, enable editing\nfrom the drop down menu.</string>
+
+    <!-- "Are You Sure . . . -->
+    <string name="are_you_sure">Are You Sure?</string>
+    <string name="not_reversible_part">Deleting this part is permanent and irreversible.</string>
+    <string name="not_reversible_source">Deleting this part source is permanent and irreversible.</string>
+    <string name="not_reversible_car">Deleting this car is permanent and irreversible.</string>
+    <string name="tapSave">Tap the save button</string>
+    <string name="tapSaveNoArrow">Tap the save button</string>
+
+    <string name="date_format">EEE, ddMMMyyyy</string>
+    <string name="textView">TextView</string>
+
+    <string name="year_hint">Year</string>
+
+
+    <!-- Permissions explanation -->
+    <string name="permissions_explanation">
+        This app utilizes a light-weight embedded databasing system to store
+        your car and part information. This section of the app is to give you a means of backing-up and
+        restoring your information in.\n\n
+
+        It\'s important to backup your data so as to prevent a lose
+        of what will sure to be, over time, a large accumulation of parts and their additional sources.
+        This lose of your information could be due to the lose or damage of your phone or tablet.\n\n
+
+        Tap the E-mail button below to directly email us with your preference in cloud drive sites.\n\n
+
+        Read the Help in the drop-down menu above for more information.
+    </string>
+
+
+    <!-- Help Texts -->
+    <string name="MainActivity_help">
+        <![CDATA[
+        <h3>Welcome to MyClassicCar.</h3>
+
+        <p>This application is aimed at aiding classic car owners to help them keep track their car\'s maintenance and have a handy database of
+            difficult to find parts for their cars with part numbers. Often times Parts Store databases
+            don\'t go back much before the 1970\'s making it difficult to locate needed parts. With this app
+            a person can supply a part number to a parts counter person for cross referencing. Making it easier
+            to locate the needed part.
+            </p>
+
+        <h5>App Hierarchy</h5>
+            <u>The App hierarchy is as follows:</u><br/>
+            &#9679; List of Vehicles.<br/>
+            &emsp;&#9679; Oil change record for a specific Vehicle.<br/>
+            &emsp;&#9679; Repair record for a specific Vehicle.<br/>
+            &emsp;&#9679; List of parts for a specific Vehicle.<br/>
+            &emsp;&emsp;&#9679; List of additional Sources for<br/>
+            &emsp;&emsp;&ensp;a specific part over and above the<br/>
+            &emsp;&emsp;&ensp;vehicle manufacture.<br/>
+
+        <h5>Getting Started</h5>
+            <p>To get started with your freshly loaded <i>My Classic Car</i>, tap the
+            plus sign in the Home view and enter the basic information for your car,
+            then tap save. The minimum information is \"Make\", \"Year\", and \"Oil Change Interval\"
+            mileage. Enter as many cars as you would like. During the Save process you will be
+            redirected back to the Home view,
+            which is where a listing of cars is maintained. Once back in the Home view, tap
+            on the cell for the car you want to add a part to or record a maintenance or oil change incident.
+            </p>
+
+        <h5>Oil and Maintenance Records</h5>
+            <p>First tap on the desired car. Then tap on either the \"Oil Change Record\" button
+            or the \"Oil Maintenance Record\" button. from there tap on the Plus Sign
+            at the lower right side of the screen to enter a new
+            record. These records are only editable after you enable editing from the
+            drop down menu.
+            </p>
+
+        <h5>Parts Database</h5>
+            <p>First tap on the desired car. Then tap on the \"Part Numbers\" button.
+            From there tap the Plus sign at the lower right side of the screen to enter a part for this car
+            \u2014 an indication of which car you are adding a part for will be posted
+            in the toolbar at the top of the view. Tap on the Question Mark \"<b>?</b>\"
+            at the top of the view for assistance and details on adding parts.
+            </p>
+
+        <h5>Making Changes to a Car</h5>
+            <p>If you make a typo, you can correct it by tapping on the Car in the list
+            in the Home view that needs the correction. At the top of the next view
+            \u2014 which is the selection view \u2014 tap on the small Car icon in the toolbar.
+            This will take you to the Car Info view. From this view tap on the pencil
+            button to edit. Be sure to tap Save once you have finished editing.
+            </p>
+
+        <h5>Credits</h5>
+        <u>Thanks to:</u><br/>
+            &#9679; Google for creating Android and Android Studio. <br/>
+            &#9679; Jet Brains for producing the IntelliJ base for Android Studio.<br/>
+            &#9679; SQLite for their open source embedded DBMS.<br/>
+         ]]>
+    </string>
+
+
+    <string name="AddCarActivity_help">
+        <![CDATA[
+        <h5>Adding a Car</h5>
+        <p>The fields here are generally self explanatory. The minimum requirement information
+        for saving a car is \"<b>Make</b>\", \"<b>Year</b>\", and \"<b>Oil Change Interval</b> mileage\".
+        (Mileage between oil changes)
+        </p>
+
+        <h5>Include a Photo</h5>
+        <p>A photo can be included with your listing by tapping on the square,
+        \"No Image Available\", at the top left corner of the view. This will
+        activate the device camera. Try to center the car in the photo for the
+        best possible thumbnail image. A photo is not requires for the entry of
+        a car. After snapping a photo many camera apps will require you to tap
+        a \"Save\" button, to accept the photo. Sometimes that \"Save\" button
+        will be in the form of a check mark.</p>
+
+        <h5>Be Sure to Save</h5>
+        <p>Save your freshly entered car by simply tapping on the green button
+        \u2014 the Save button \u2014 at the lower left of the view.
+        Once saved you will be returned to the Home view
+        where you will see your newly entered car.</p>
+
+        <h5>Making Changes</h5>
+        <p>If you make a typo, you can correct it by tapping on the car in the list
+        in the Home view that needs the correction. From the next view
+        \u2014 which is the Record Selection view \u2014 tap on the small car icon
+        in the toolbar. This will take you to a view displaying your car\'s info.
+        Now tap on the pencil button to edit. Be sure to tap Save once you have finished editing.</p>
+
+        ]]>
+    </string>
+
+
+    <string name="RecordSelectActivity_help">
+                <![CDATA[
+        <h5>App Structure</h5>
+
+            <u>The App hierarchy is as follows:</u><br/>
+            &#9679; List of Vehicles.<br/>
+            &emsp;&#9679; Oil change record for a specific Vehicle.<br/>
+            &emsp;&#9679; Repair record for a specific Vehicle.<br/>
+            &emsp;&#9679; List of parts for a specific Vehicle.<br/>
+            &emsp;&emsp;&#9679; List of additional Sources for<br/>
+            &emsp;&emsp;&ensp;a specific part over and above the<br/>
+            &emsp;&emsp;&ensp;vehicle manufacture.<br/>
+            ]]>
+    </string>
+
+
+    <string name="ViewPartActivity_help">
+        <![CDATA[
+
+            <h5>OEM Parts</h5>
+            <p>The parts that are or will be presented here are intended to be
+            parts from a car manufacture, often referred to as OEM parts. These can be seen as the
+            \"<b>root</b>\" part, providing a listing for, lets say, an Air Filter.
+            Once you have entered a part tap on the desired part you want to see the information for. It is in the next
+            view you can add additional sources for that part.</p>
+
+
+            <h5>Add an OEM Part</h5>
+            <p>To add an OEM part tap on the plus sign and fill in the information you have.
+            A <b>Part Name</b> is required for saving a part \u2014 Name-less parts are not permitted.
+            A <b>Part Number</b> is NOT required for creating a part as original manufacture
+            part numbers are often not easily obtainable. This will at least get a listing
+            started for a part for this car \u2014 an indication of which car you are adding a part for will be posted
+            in the toolbar at the top of the view. Be sure to tap the save button when you are
+            finished.</p>
+
+            <p>If you didn\'t have the Part Number or other information at the
+            time you created the OEM Part listing, you can add it later by edit the
+            listing and adding the missing information. Check the help \"<b>?</b>\" in the next
+            view for info on viewing and editing an OEM part. </p>
+
+            <h5>Include a Photo</h5>
+            <p>When adding or editing an OEM part, a photo can be included or changed by
+            simply tapping on the photo square to activate the device camera. Many camera apps
+            will require you to tap a \"Save\" button, to accept the photo.
+            Sometimes that \"Save\" button will be in the form of a check mark.</p>
+
+            <h5>Map to Existing OEM Parts</h5>
+            <p>As an intended feature of this app, after you have entered more than one
+            vehicle and OEM parts for those vehicles, you will offered the ability to
+            map to an existing part already in storage. Tap on the plus sign to add a part as normal.
+            If you choose \"Existing\" you will be presented with a full list of <i>ALL</i> parts in storage except
+            for those already mapped to the particular vehicle you are seeking to
+            add a part to.</p>
+
+            <p>The premise behind this feature is many cars from the same car manufacture,
+            approximately the same age, will often use the same
+            part on two different Models of the same brand of vehicles, and often two different brands
+            from the same car manufacture. These listings will literally be the same exact
+            part in storage, merely mapped to more than one car. So if you edit an OEM
+            part while under a specific vehicle, that edit will also appear in the listing
+            under the other vehicle(s) this part is mapped to. (So, no, you\'re not going
+            crazy.)</p>
+
+            <p>This feature is intended to provide flexibility, save space in storage,
+            prevent redundancies, and hopefully prevent confusion.</p>
+
+            <h5>Add Additional Sources</h5>
+            <p>Once an "OEM" part is created or mapped to a specific vehicle simply tap on
+            the desired part listing to view its details. When viewing a parts details
+            \u2014 Single Part view \u2014 tap on the Plus sign to enter additional
+            sources for that part.</p>
+        ]]>
+    </string>
+
+    <string name="SinglePartActivity_help">
+        <![CDATA[
+            <h5>View OEM Part Info</h5>
+            <p>To see the complete OEM part listing tap on either the <b>Part Name</b> or <b>OEM
+            Part Number</b> fields to view all the part\'s details, including any added notes or details. </p>
+
+            <h5>Edit OEM Part Information</h5>
+            <p>To make a correction or alteration to an OEM part
+            first view the part\'s details by tapping on either the <b>Part Name</b> or <b>OEM
+            Part Number</b> fields, then tap on the pencil to edit. In Edit mode the photo can
+            changed or added by tapping the photo to activate the camera. Be sure to tap Save when finished.</p>
+
+            <h5>Delete an OEM Part</h5>
+            <p>Tap on either the <b>Part Name</b> or <b>OEM Part Number</b> fields to enter
+            the OEM Part details view. Once there, tap on the drop down menu in the toolbar \u2014 three vertical
+            dots. In the drop down menu is a selection called \"Delete OEM Part\".
+            This will delete the current OEM part and <i>all</i> of the additional sources listed for this part. Once
+            deleted you will be redirected to the view listing the OEM parts for the current
+            car less the one you just deleted. If this was a shared part it will only be un-mapped
+            to this car and remain in storage and mapped to the other car(s) it was mapped to.
+            </p>
+
+            <h5>Add Additional Sources</h5>
+            <p>Additional sources are places like Parts Stores, websites, and catalogs, To add an
+            additional source for \"this\" part tap on the Plus sign. Add as many additional
+            sources as you need to.</p>
+        ]]>
+    </string>
+
+    <string name="BackupActivity_help">
+        <![CDATA[
+        <h5>Information backup</h5>
+        <p>This is the <i>\"quick and dirty\"</i> backup solution. Cloud backup solutions will be implemented
+            once it is discovered which cloud drive backup solutions people want to use. E-mail
+            pps@woodlandsoftwaresolutions.com with your preference of cloud drive sites by clicking
+            the \"E-mail\" button on the Backup view.</p>
+
+        <h5>How To Do a Backup</h5>
+        <p>Simply tap the Backup button. A copy of the file where your information is stored will be placed
+            in the <b>Documents</b> directory. This makes it possible to have access the database file
+            that your app information is stored in. Use the File Manager that accompanies nearly all Android devices to
+            look in Internal Storage for a file called \"carParts.db\". You will want to copy the
+            \"carParts.db\" file to an off device drive website or location. You could e-mail yourself the file or
+            perform a Share on it to an Internet Cloud drive site like Google Drive of DropBox.
+            You will have the have the mobile app for your favorite cloud drive site installed on you
+            device to do this.</p>
+
+        <h5>Restoring your information</h5>
+        <p>If you have changed devices because you are upgrading or because of lose or damage,
+            you can restore your PPS data file by first returning your saved information file, \"carParts.db\", to
+            your device by e-mailing it to yourself or by saving it to favorite cloud drive site and then exporting or
+            saving it to the <b>Download</b> directory in Internal Storage. Most of the time you <i>will not</i>
+            have a choice of where your file gets saved to on your device. It will most likely be
+            copied to the <b>Download</b> directory, which is why the Download directory was setup in
+            this app as the place where the Restore subroutine will go looking for your
+            information file at. Simply tap the Restore button to restore your car and parts information
+            to the app.</p>
+
+        <p><b>Do not</b> alter your information file while it is in your chosen backup location as
+            this will very likely cause inaccessibility to some or most of your stored information and
+            possibly app crashes. Data corruption.</p>
+
+        <p>If you received a \"File Not Found\" error statement while trying to perform a Restore
+            then your file is not in the correct location on your device. On many devices there is a
+            Download directory on both your microSD card and in \"Device Storage\". You want one in
+            the Device Storage, which is sometimes called Internal Storage. Use your device\'s File
+            Manager app to copy the file to the correct location on your device\'s file system.
+            This is currently the only way to restore your app information. </p>
+        ]]>
+    </string>
+
+
+
+</resources>

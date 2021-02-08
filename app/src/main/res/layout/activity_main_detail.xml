@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/carInfoImageView"
+        android:layout_width="120dp"
+        android:layout_height="95dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/app_image"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/noimage" />
+
+    <TextView
+        android:id="@+id/carInfoYearTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/carInfoImageView"
+        android:text="@string/year_field"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/carInfoImageView"
+        app:layout_constraintTop_toTopOf="@+id/carInfoImageView" />
+
+    <TextView
+        android:id="@+id/carInfoMakeTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/carInfoModelTextView"
+        android:text="@string/make"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/carInfoYearTextView"
+        app:layout_constraintTop_toTopOf="@+id/carInfoYearTextView" />
+
+    <TextView
+        android:id="@+id/carInfoModelTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/carInfoYearTextView"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/carInfoImageView"
+        android:text="@string/model"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/carInfoImageView"
+        app:layout_constraintTop_toBottomOf="@+id/carInfoYearTextView" />
+
+    <TextView
+        android:id="@+id/carInfoNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/carInfoImageView"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@+id/carInfoImageView"
+        android:text="@string/name"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/carInfoImageView"
+        app:layout_constraintStart_toEndOf="@+id/carInfoImageView"
+        app:layout_constraintTop_toBottomOf="@+id/carInfoModelTextView" />
+
+    <TextView
+        android:id="@+id/carNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/carInfoNameTextView"
+        android:layout_alignBottom="@+id/carInfoNameTextView"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@+id/carInfoNameTextView"
+        android:text="@string/name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/carInfoImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/carInfoNameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/carInfoModelTextView" />
+
+
+    <TextView
+        android:id="@+id/idTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/carInfoModelTextView"
+        android:layout_alignBottom="@+id/carInfoImageView"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/background_light"
+        android:textSize="8sp"
+        tools:ignore="SmallSp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/carInfoOilLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/next_oil"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/carInfoOilTextView"
+        app:layout_constraintStart_toStartOf="@+id/carInfoImageView"
+        app:layout_constraintTop_toBottomOf="@+id/carInfoImageView" />
+
+    <TextView
+        android:id="@+id/carInfoOilTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/next_oil"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/carInfoOilLabel"
+        app:layout_constraintTop_toBottomOf="@+id/carInfoImageView" />
+
+</android.support.constraint.ConstraintLayout>

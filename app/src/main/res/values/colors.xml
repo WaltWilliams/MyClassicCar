@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="StandardPrimary">#84BCDA</color>
+    <color name="StandardPrimaryDark">#067BC2</color>
+    <color name="StandardFieldAlternate">#e9f2f7</color>
+    <color name="StandardTitleText">#ECC30B</color>
+    <color name="StandardAccent">#F37748</color>
+    <color name="StandardColor1">#C47335</color>
+    <color name="StandardColor2">#56351E</color>
+
+    <color name="fallWinterPrimary">#2660A4</color>
+    <color name="fallWinterPrimaryDark">#FF262CA4</color>
+    <color name="fallWinterTitleText">#EDF7F6</color>
+    <color name="fallWinterAccent">#F19953</color>
+
+    <color name="YankeePrimary">#151E2F</color>
+    <color name="YankeePrimaryDark">#030027</color>
+    <color name="YankeeTitleText">#F2F3D9</color>
+    <color name="YankeeAccent">#C16E70</color>
+    <color name="YankeeLightAccent">#DC9E82</color>
+
+    <color name="DarkPrimary">#2E3532</color>
+    <color name="DarkPrimaryDark">#7E9181</color>
+    <color name="DarkTitleText">#C7CEDB</color>
+    <color name="DarkAccent">#94849B</color>
+    <color name="DarkLightAccent">#A0AAB2</color>
+
+    <color name="Ivory">#FFFFEA</color>
+    <color name="Black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#3bbf19</color>
+</resources>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.woodlandcoders.myclassiccar.SinglePartActivity">
+
+    <include
+        android:id="@+id/singleCarToolbar"
+        layout="@layout/toolbar" />
+
+    <ImageView
+        android:id="@+id/singlePartImageView"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/noimage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singleCarToolbar"
+        app:srcCompat="@drawable/noimage" />
+
+    <TextView
+        android:id="@+id/existingPartsNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:gravity="left|center"
+        android:text="@string/part_name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/singlePartImageView"
+        app:layout_constraintTop_toTopOf="@+id/singlePartImageView"
+        android:clickable="true"
+        />
+
+    <TextView
+        android:id="@+id/existingPartsNumberTextView"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="left|center"
+        android:text="@string/oem_part_number"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/singlePartImageView"
+        app:layout_constraintTop_toBottomOf="@+id/existingPartsNameTextView" />
+
+    <TextView
+        android:id="@+id/singlePartSrcTextView"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="left|center"
+        android:text="@string/mfg"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/canterGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/existingPartsNumberTextView" />
+
+    <TextView
+        android:id="@+id/singlePartBarcodeTextView"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="left|center"
+        android:text="@string/part_number"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/canterGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/existingPartsNumberTextView" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/canterGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ListView
+        android:id="@+id/singleCarPartListview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alternateTextView" />
+
+    <TextView
+        android:id="@+id/partNameLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@color/StandardFieldAlternate"
+        android:text="@string/part_name"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/existingPartsNameTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/existingPartsNameTextView"
+        app:layout_constraintTop_toTopOf="@+id/singlePartImageView" />
+
+    <TextView
+        android:id="@+id/partNumLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@color/StandardFieldAlternate"
+        android:text="@string/oem_part_number"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/existingPartsNumberTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/existingPartsNumberTextView"
+        app:layout_constraintTop_toBottomOf="@+id/existingPartsNameTextView" />
+
+    <TextView
+        android:id="@+id/partMfgLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/mfg"
+        android:textSize="12sp"
+        android:background="@color/StandardFieldAlternate"
+        app:layout_constraintBottom_toTopOf="@+id/singlePartSrcTextView"
+        app:layout_constraintEnd_toStartOf="@+id/PartBCLabel"
+        app:layout_constraintStart_toStartOf="@+id/singlePartSrcTextView"
+        app:layout_constraintTop_toBottomOf="@+id/singlePartImageView" />
+
+    <TextView
+        android:id="@+id/PartBCLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/part_number"
+        android:textSize="12sp"
+        android:background="@color/StandardFieldAlternate"
+        app:layout_constraintBottom_toTopOf="@+id/singlePartBarcodeTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/singlePartBarcodeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/existingPartsNumberTextView" />
+
+    <TextView
+        android:id="@+id/alternateTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/StandardFieldAlternate"
+        android:text="@string/other_sources"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/singlePartBarcodeTextView"
+        app:layout_constraintStart_toStartOf="@+id/singlePartSrcTextView"
+        app:layout_constraintTop_toBottomOf="@+id/singlePartSrcTextView" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/scpvFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/ic_add_white_24dp" />
+
+
+</android.support.constraint.ConstraintLayout>

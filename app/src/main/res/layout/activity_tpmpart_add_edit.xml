@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/tpmAddFab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/fab_marginEnd"
+        android:layout_marginEnd="@dimen/fab_marginEnd"
+        app:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/ic_save_white_24dp" />
+
+    <include
+        android:id="@+id/addTpmPartToolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/innerLayout_drop"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TPMPartSourceLabelTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/StandardFieldAlternate"
+                android:paddingStart="@dimen/textView_padding"
+                android:text="@string/source"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/TPMPartSourceEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/editView_padding"
+                android:ems="10"
+                android:hint="@string/source"
+                android:inputType="textCapWords"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/TPMpartNumLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/textView_padding"
+                android:text="@string/part_number"
+                android:background="@color/StandardFieldAlternate"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/TPMPartNumEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/part_number"
+                android:inputType="textCapCharacters"
+                android:paddingHorizontal="@dimen/editView_padding" />
+
+            <TextView
+                android:id="@+id/TPMmfgLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/textView_padding"
+                android:text="@string/mfg"
+                android:background="@color/StandardFieldAlternate"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/TPMmfgEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/mfg"
+                android:inputType="textCapWords"
+                android:paddingHorizontal="@dimen/editView_padding" />
+
+            <TextView
+                android:id="@+id/TPMbarcodeLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/textView_padding"
+                android:text="@string/barcode"
+                android:background="@color/StandardFieldAlternate"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/TPMbarcodeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/barcode"
+                android:inputType="number"
+                android:paddingHorizontal="@dimen/editView_padding" />
+
+            <TextView
+                android:id="@+id/TPMPartNoteLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/textView_padding"
+                android:text="@string/details"
+                android:background="@color/StandardFieldAlternate"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/TPMPartNoteEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="@string/details"
+                android:inputType="textCapSentences|textMultiLine"
+                android:paddingHorizontal="@dimen/editView_padding"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

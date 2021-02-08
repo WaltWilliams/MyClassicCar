@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addCarFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/fab_marginEnd"
+        android:layout_marginEnd="@dimen/fab_marginEnd"
+        app:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/ic_save_white_24dp" />
+
+
+    <include
+        android:id="@+id/addCarToolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginTop="@dimen/innerLayout_drop">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.31" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.63" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/carGuideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5"/>
+
+            <ImageButton
+                android:id="@+id/addCarImageButton"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/background_light"
+                android:contentDescription="@string/app_image"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/noimage" />
+
+            <TextView
+                android:id="@+id/addCarMakeLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/make"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:background="@color/StandardFieldAlternate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/addCarImageButton"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SmallSp" />
+
+            <EditText
+                android:id="@+id/addCarMakeEditText"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:hint="@string/make"
+                android:inputType="textCapWords"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/addCarImageButton"
+                app:layout_constraintTop_toBottomOf="@+id/addCarMakeLabel" />
+
+            <TextView
+                android:id="@+id/addCarModelLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/model"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:background="@color/StandardFieldAlternate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/addCarImageButton"
+                app:layout_constraintTop_toBottomOf="@+id/addCarMakeEditText"
+                tools:ignore="SmallSp"/>
+
+            <EditText
+                android:id="@+id/addCarModelEditText"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:hint="@string/model"
+                android:inputType="textCapWords"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/addCarImageButton"
+                app:layout_constraintTop_toBottomOf="@+id/addCarModelLabel" />
+
+            <TextView
+                android:id="@+id/addCarYearLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/year_field"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:background="@color/StandardFieldAlternate"
+                app:layout_constraintEnd_toEndOf="@+id/addCarImageButton"
+                app:layout_constraintStart_toStartOf="@+id/addCarImageButton"
+                app:layout_constraintTop_toBottomOf="@+id/addCarImageButton"
+                tools:ignore="SmallSp"/>
+
+            <TextView
+                android:id="@+id/addCarNameLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/name"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:background="@color/StandardFieldAlternate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/addCarImageButton"
+                app:layout_constraintTop_toBottomOf="@+id/addCarModelEditText"
+                tools:ignore="SmallSp"/>
+
+            <Spinner
+                android:id="@+id/addCarYearSpinner"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:spinnerMode="dialog"
+                android:prompt="@string/year_hint"
+                app:layout_constraintEnd_toEndOf="@+id/addCarYearLabel"
+                app:layout_constraintStart_toStartOf="@+id/addCarYearLabel"
+                app:layout_constraintTop_toBottomOf="@+id/addCarYearLabel" />
+
+            <EditText
+                android:id="@+id/addCarNameEditText"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:hint="@string/name"
+                android:inputType="textCapWords"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/addCarImageButton"
+                app:layout_constraintTop_toBottomOf="@+id/addCarNameLabel" />
+
+            <TextView
+                android:id="@+id/addCarVINLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/vin"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:background="@color/StandardFieldAlternate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addCarNameEditText"
+                tools:ignore="SmallSp"/>
+
+            <TextView
+                android:id="@+id/addCarEngSizeLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/eng_size"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:background="@color/StandardFieldAlternate"
+                app:layout_constraintEnd_toStartOf="@+id/guideline0"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addCarVINeditText"
+                tools:ignore="SmallSp"/>
+
+            <TextView
+                android:id="@+id/addCarUnitLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/unit_field"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:background="@color/StandardFieldAlternate"
+                app:layout_constraintEnd_toStartOf="@+id/guideline1"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline0"
+                app:layout_constraintTop_toBottomOf="@+id/addCarVINeditText"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/addCarConfigLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@string/eng_config"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:background="@color/StandardFieldAlternate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline1"
+                app:layout_constraintTop_toBottomOf="@+id/addCarVINeditText"
+                tools:ignore="SmallSp"/>
+
+            <Spinner
+                android:id="@+id/addCarUnitSpinner"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline1"
+                app:layout_constraintStart_toStartOf="@+id/guideline0"
+                app:layout_constraintTop_toBottomOf="@+id/addCarUnitLabel" />
+
+            <Spinner
+                android:id="@+id/addCarConfigSpinner"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline1"
+                app:layout_constraintTop_toBottomOf="@+id/addCarConfigLabel" />
+
+            <TextView
+                android:id="@+id/addCarEngNumberLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/eng_number"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:background="@color/StandardFieldAlternate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addCarUnitSpinner"
+                tools:ignore="SmallSp" />
+
+            <EditText
+                android:id="@+id/addCarEngNumberEditText"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:hint="@string/eng_number"
+                android:inputType="textCapCharacters"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addCarEngNumberLabel" />
+
+            <TextView
+                android:id="@+id/addCarNotesLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="56dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/notes"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:background="@color/StandardFieldAlternate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addCarEngNumberEditText"
+                tools:ignore="SmallSp"/>
+
+            <EditText
+                android:id="@+id/addCarNotesEditText"
+                android:layout_width="0dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="@string/notes"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addCarNotesLabel" />
+
+            <EditText
+                android:id="@+id/addCarEngSizeEditText"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:hint="@string/eng_size"
+                android:inputType="numberDecimal"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/addCarUnitSpinner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addCarEngSizeLabel" />
+
+            <EditText
+                android:id="@+id/addCarVINeditText"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:hint="@string/vin"
+                android:inputType="textCapCharacters"
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addCarVINLabel" />
+
+            <EditText
+                android:id="@+id/addCarIntervalEditText"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:hint="@string/oil_interval"
+                android:inputType="number"
+                app:layout_constraintEnd_toStartOf="@+id/carGuideline2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addCarChangeLabel" />
+
+            <TextView
+                android:id="@+id/addCarChangeLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/oil_interval"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:background="@color/StandardFieldAlternate"
+                app:layout_constraintEnd_toStartOf="@+id/AddCarOdometerLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addCarEngNumberEditText"
+                tools:ignore="SmallSp"/>
+
+            <TextView
+                android:id="@+id/AddCarOdometerLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@string/odo_type"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:background="@color/StandardFieldAlternate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/carGuideline2"
+                app:layout_constraintTop_toBottomOf="@+id/addCarEngNumberEditText"
+                tools:ignore="SmallSp" />
+
+            <Spinner
+                android:id="@+id/addCarOdometerSpinner"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/addCarIntervalEditText"
+                app:layout_constraintTop_toBottomOf="@+id/AddCarOdometerLabel" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
